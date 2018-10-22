@@ -3,3 +3,5 @@ add search box
     search by name/alias/title, house
 next and previous page on the main page
 home page button to get out of search results
+have 3 routes
+have 5 resources
