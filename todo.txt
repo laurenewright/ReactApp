@@ -12,3 +12,15 @@ componentDidMount(){
         .then()
         .then()
 }
+
+
+
+
+    fetch(endpoint)
+        .then(response => response.json())
+        .then(responseData => {
+          this.setState({names: responseData.characters.name});
+        })
+        .catch(error => {
+          console.log('Error fetching and parsing data', error)
+        });

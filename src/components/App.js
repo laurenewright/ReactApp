@@ -5,7 +5,7 @@ import CharacterList from './CharacterList';
 import Character from './Character';
 
 
-const endpoint = 'https://www.anapioficeandfire.com/api/characters/2';
+const endpoint = 'https://www.anapioficeandfire.com/api/characters';
 
 export default class App extends Component {
   
@@ -20,7 +20,7 @@ export default class App extends Component {
     fetch(endpoint)
         .then(response => response.json())
         .then(responseData => {
-          this.setState({names: responseData.name});
+          this.setState({names: responseData.map(character => character.name + "" + character.aliases ) });
         })
         .catch(error => {
           console.log('Error fetching and parsing data', error)
