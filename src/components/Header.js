@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../Logo_Game_of_Thrones.png';
 
 const Header = props => {

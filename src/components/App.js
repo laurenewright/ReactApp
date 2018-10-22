@@ -1,18 +1,42 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
+import CharacterList from './CharacterList';
+import Character from './Character';
 
-class App extends Component {
-  render() {
-    return (
+
+const endpoint = 'https://www.anapioficeandfire.com/api/characters/2';
+
+export default class App extends Component {
+  
+  constructor(){
+    super();
+    this.state = {
+      names: []
+    };
+  }
+
+  componentDidMount(){
+    fetch(endpoint)
+        .then(response => response.json())
+        .then(responseData => {
+          this.setState({names: responseData.name});
+        })
+        .catch(error => {
+          console.log('Error fetching and parsing data', error)
+        });
+}
+  render(){
+    console.log(this.state.names);
+    return(
       <div className="App">
         <Header />
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          <div className="main-page">
+            <Character />
+          </div>
         </p>
       </div>
     );
   }
 }
-
-export default App;

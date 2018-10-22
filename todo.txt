@@ -4,4 +4,11 @@ add search box
 next and previous page on the main page
 home page button to get out of search results
 have 3 routes
+    name, house, books
 have 5 resources
+    
+componentDidMount(){
+    fetch'https://www.anapioficeandfire.com/api/characters')
+        .then()
+        .then()
+}
