@@ -2,38 +2,55 @@ import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-import Character from './Character';
+import CharacterName from './CharacterName';
+import CharacterAliases from './CharacterAliases';
 
 
-const endpoint = 'https://www.anapioficeandfire.com/api/characters';
+
 
 export default class App extends Component {
   
   constructor(){
     super();
     this.state = {
+      aliases: []
+    };
+    this.state = {
       names: []
+
     };
   }
 
-  componentDidMount(){
-    fetch(endpoint)
-        .then(response => response.json())
-        .then(responseData => {
-          this.setState({names: responseData.map(character => character.name + "" + character.aliases ) });
-        })
-        .catch(error => {
-          console.log('Error fetching and parsing data', error)
-        });
-}
+  // componentDidMount(){
+  //   fetch(endpoint)
+  //       .then(response => response.json())
+  //       .then(responseData => {
+  //         this.setState({names: responseData.map(character => character.name) });
+  //       })
+  //       .catch(error => {
+  //         console.log('Error fetching and parsing data', error)
+  //       });
+  // }
+  // componentDidMount(){
+  //   fetch(endpoint)
+  //       .then(response => response.json())
+  //       .then(responseData => {
+  //         this.setState({aliases: responseData.map(character => character.aliases) });
+  //       })
+  //       .catch(error => {
+  //         console.log('Error fetching and parsing data', error)
+  //       });
+  // }
   render(){
-    console.log(this.state.names);
+    // console.log(this.state.names);
+    // console.log(this.state.aliases);
     return(
       <div className="App">
         <Header />
         <p className="App-intro">
           <div className="main-page">
-            <Character />
+          <CharacterAliases />
+            <CharacterName />
           </div>
         </p>
       </div>
