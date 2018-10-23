@@ -33,10 +33,12 @@ class CharacterName extends Component {
         <div className="App">
           <p className="App-intro">
             <div className="main-page">
+
             </div>
           </p>
         </div>
       );
     }
   }
+
 export default CharacterName;

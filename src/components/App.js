@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-import CharacterName from './CharacterName';
-import CharacterAliases from './CharacterAliases';
 
 
 
@@ -17,7 +15,6 @@ export default class App extends Component {
     };
     this.state = {
       names: []
-
     };
   }
 
@@ -49,8 +46,7 @@ export default class App extends Component {
         <Header />
         <p className="App-intro">
           <div className="main-page">
-          <CharacterAliases />
-            <CharacterName />
+          <CharacterList />
           </div>
         </p>
       </div>
