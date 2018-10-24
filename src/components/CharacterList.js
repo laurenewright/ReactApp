@@ -1,13 +1,12 @@
 import React from 'react';
-import CharacterAliases from './CharacterAliases';
-import CharacterName from './CharacterName';
+import Character from 'Characters';
 
 const CharacterList = props => {
     return (
         <ul className="character-list">
-            <CharacterAliases />
-            <CharacterName /> 
+            <Character />
         </ul>
     );
 }
+
 export default CharacterList;
