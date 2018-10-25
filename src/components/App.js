@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-// import CharacterList from './CharacterList';
+// import Book from './Book';
 
 
-const endpoint = 'https://www.anapioficeandfire.com/api/characters';
-
+const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
+// const bookEndpoint = 'https://anapioficeandfire.com/api/books';
 
 
 class App extends Component {
@@ -16,9 +16,12 @@ class App extends Component {
     this.state = {
       profiles: []
     };
+    // this.state = {
+    //   books: []
+    // };
   }
     componentDidMount(){
-      fetch(endpoint)
+      fetch(charEndpoint)
           .then(response => response.json())
           .then(responseData => {
             this.setState({profiles: responseData});
@@ -27,17 +30,27 @@ class App extends Component {
             console.log('Error fetching and parsing data', error)
           });
     }
+    // componentDidMount(){
+    //   fetch(bookEndpoint)
+    //       .then(response => response.json())
+    //       .then(responseData => {
+    //         this.setState({books: responseData});
+    //       })
+    //       .catch(error => {
+    //         console.log('Error fetching and parsing data', error)
+    //       });
+    // }
     render(){
+      let profiles = this.state.profiles;
       console.log(this.state.profiles);
-      // console.log(this.state.aliases);
       return(
         <div className="App">
-          <p className="App-intro">
-              <Header />
+            <Header />
+          <div className="App-intro">
             <div className="main-page">
-              <CharacterList />
+              <CharacterList list={profiles}/>
             </div>
-          </p>
+          </div>
         </div>
       );
     }

@@ -26,9 +26,10 @@
 }
 
 .main-page {
-  font-size: large;
+  font-size: 1em;
+  column-count: 3
 }
 
 .profile {
-  font-size: large;
+  font-size: 1em;
 }
