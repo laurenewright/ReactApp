@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-// import Book from './Book';
+import Book from './Book';
 
 
 const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
@@ -49,6 +49,7 @@ class App extends Component {
           <div className="App-intro">
             <div className="main-page">
               <CharacterList list={profiles}/>
+              <Book />
             </div>
           </div>
         </div>
