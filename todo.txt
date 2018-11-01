@@ -56,4 +56,8 @@ have 5 resources
 	]
 }
 
-test
+categories that are arrays: 
+	books
+	titles (can be blank)
+	playedBy (can be blank)
+	tvSeries

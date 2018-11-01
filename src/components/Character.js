@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from './Book';
+// import Book from './Book';
 
 const Character = props => (
   <li className="profile">
@@ -34,7 +34,7 @@ const Character = props => (
         Allegiances: {props.character.allegiances || "Unknown"}
     </p>
     <p>
-        Books: {props.character.book || "Unknown"}
+        Books: {props.character.books || "Unknown"}
     </p>
     <p>
         Played By: {props.character.playedBy || "Unknown"}
