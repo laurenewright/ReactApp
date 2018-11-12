@@ -5,7 +5,8 @@
 }
 
 .App-logo {
-  height: 75px;
+  height: 75%;
+  max-width: 100%;
 }
 
 .App-header {
@@ -13,16 +14,26 @@
   height: 150px;
   padding: 25px;
   color: white;
+  text-align: center;
 }
 
+.main-nav li {
+  display: inline;
+  float: right;
+  font-size: 1.5em;
+  padding: 10px;
+  font-family: 'Cinzel Decorative';
+}
 .App-title {
   font-size: 1.5em;
   padding-top: 10px;
   font-family: 'Cinzel Decorative';
+  position: center;
 }
 
 .App-intro {
   font-size: large;
+  position: center;
 }
 
 .main-page {
@@ -32,4 +43,9 @@
 
 .profile {
   font-size: 1em;
+}
+
+p {
+  padding-top: 5%;
+  text-align: center;
 }

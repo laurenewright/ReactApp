@@ -5,7 +5,7 @@ class Home extends Component {
         return(
             <div className = "App-intro">
                 <p>
-                    A list
+                    Click on the links at the top right-hand side to navigate to different Game of Throne directories.
                 </p>
             </div>
         )

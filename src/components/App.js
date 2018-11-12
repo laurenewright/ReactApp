@@ -7,20 +7,19 @@ import {
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-import Booklist from './Booklist';
+// import Booklist from './Booklist';
 import Houses from './Houses';
 import Home from './Home';
 
 
 const App = () => (
     <BrowserRouter>
-    <div className="container">
+    <div>
       <Header />
-      
       <Switch className = "main-page">
         <Route exact path="/" component={Home} />
         <Route path="/CharacterList" component={CharacterList}/>
-        <Route path="/BookList" component={Booklist} />
+        {/* <Route path="/BookList" component={Booklist} /> */}
         <Route path="/Houses" component={Houses} />
       </Switch>
     </div>

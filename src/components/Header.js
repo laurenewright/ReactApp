@@ -7,10 +7,10 @@ const Header = () => (
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-title">A directory</h1>
             <ul className="main-nav">
-                <li><NavLink exact to="/">Home</NavLink></li>
-                <li><NavLink to="/CharacterList">Character List</NavLink></li>
-                <li><NavLink to="/Houses">Houses</NavLink></li>
                 <li><NavLink to="/Books">Books</NavLink></li>
+                <li><NavLink to="/Houses">Houses</NavLink></li>
+                <li><NavLink to="/CharacterList">Character List</NavLink></li>
+                <li><NavLink exact to="/">Home</NavLink></li>
             </ul>
     </header>
 );
