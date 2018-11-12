@@ -1,25 +1,14 @@
-// import React from 'react';
-
-// // const bookEndpoint = 'https://anapioficeandfire.com/api/books';
-
-// const Book = props => (
-//   <li className = "Book">
-//     <p>{props.BookList.name}</p>
-//   </li>
-// );
-// export default Book; 
-
 import React, { Component } from 'react';
 import BookList from './BookList';
 
 const bookEndpoint = 'https://anapioficeandfire.com/api/books';
 
-class Book extends Component {
+class House extends Component {
   
   constructor(){
     super();
     this.state = {
-      book: [],
+      house: [],
     };
   }
 componentDidMount(){
@@ -33,12 +22,13 @@ componentDidMount(){
       });
 }
     render(){
-      let books = this.state.book;
-      console.log(this.state.book);
+      let houses = this.state.house;
+      console.log(this.state.house);
       return(
         <div className="App">
           <div className="App-intro">
             <div className="main-page">
+            {houses}
             </div>
           </div>
         </div>
@@ -46,4 +36,4 @@ componentDidMount(){
     }
   }
 
-export default Book;
+export default House;

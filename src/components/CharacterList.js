@@ -2,6 +2,9 @@ import React from 'react';
 import Character from './Character';
 // import Book from './Book';
 
+
+
+
 const CharacterList = props => {
     console.log(this)
     return (

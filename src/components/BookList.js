@@ -7,7 +7,7 @@ const BookList = props => {
     console.log(this)
     return (
         <ul className="book-list">
-            {/* {props.book.map(b => <Book book={b}/>)} */}
+            {props.book.map(b => <Book book={b}/>)}
         </ul>
     );
 }
