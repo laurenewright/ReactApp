@@ -55,7 +55,10 @@ have 5 resources
 		"Kit Harington"
 	]
 }
-
+install
+	react-router
+	react-router-dom
+	
 categories that are arrays: 
 	books
 	titles (can be blank)

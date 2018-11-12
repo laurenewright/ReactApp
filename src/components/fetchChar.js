@@ -1,12 +1,11 @@
-import React from 'react';
+import React  from 'react';
 
-const charEndpoint = 'https://www.anapioficeandfire.com/api/characters?page=1';
-const fetchChar = () => = {
+const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
+class fetchChar extends Component {
     constructor(){
       super();
       this.state = {
         profiles: [],
-        book: []
       };
     }
       componentDidMount(){
@@ -19,12 +18,10 @@ const fetchChar = () => = {
               console.log('Error fetching and parsing data', error)
             });
       }
-      return(
-        let profiles = this.state.profiles;
-        return(
-            <div className="App">
-                <CharacterList list={profiles}/>
-            </div>
-        );
 }
+return(
+    <div className="App">
+        <CharacterList list={profiles}/>
+    </div>
+);
   export default fetchChar;

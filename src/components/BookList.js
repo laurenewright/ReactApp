@@ -1,7 +1,5 @@
 import React from 'react';
-import book from './Book';
-
-// import Book from './Book';
+// import book from './Book';
 
 const BookList = props => {
     console.log(this)

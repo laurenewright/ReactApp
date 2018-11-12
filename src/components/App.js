@@ -9,28 +9,18 @@ import Header from './Header';
 import CharacterList from './CharacterList';
 import Booklist from './Booklist';
 import Houses from './Houses';
+import Home from './Home';
 
-
-const charEndpoint = 'https://www.anapioficeandfire.com/api/characters?page=1';
 
 const App = () => (
-    // previousPage =() => {
-    //   if (this.state.currentPage !== 1)
-    //   this.setState((prevState) => ({currentPage: (prevState.charEndpoint -1 )}))
-    // }
-
-    // nextPage = () => {
-    //   if (this.state.currentPage + 1 < this.state.profiles)
-    //   this.setState((prevState) => ({currentPage: (prevState.charEndpoint + 1)}))
-    // }
-
     <BrowserRouter>
     <div className="container">
       <Header />
       
-      <Switch>
-        <Route path="/CharacterList" render={ () => <CharacterList title='CharacterList' /> } />
-        <Route exact path="./BookList" component={Booklist} />
+      <Switch className = "main-page">
+        <Route exact path="/" component={Home} />
+        <Route path="/CharacterList" component={CharacterList}/>
+        <Route path="/BookList" component={Booklist} />
         <Route path="/Houses" component={Houses} />
       </Switch>
     </div>

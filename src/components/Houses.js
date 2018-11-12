@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import BookList from './BookList';
+import HouseList from './HouseList';
 
-const bookEndpoint = 'https://anapioficeandfire.com/api/books';
+const houseEndpoint = 'https://anapioficeandfire.com/api/houses';
 
-class House extends Component {
+class Houses extends Component {
   
   constructor(){
     super();
@@ -12,10 +12,10 @@ class House extends Component {
     };
   }
 componentDidMount(){
-  fetch(bookEndpoint)
+  fetch(houseEndpoint)
       .then(response => response.json())
       .then(responseData => {
-        this.setState({books: responseData});
+        this.setState({houses: responseData});
       })
       .catch(error => {
         console.log('Error fetching and parsing data', error)
@@ -36,4 +36,4 @@ componentDidMount(){
     }
   }
 
-export default House;
+export default Houses;

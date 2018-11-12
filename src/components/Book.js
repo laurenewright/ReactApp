@@ -39,6 +39,7 @@ componentDidMount(){
         <div className="App">
           <div className="App-intro">
             <div className="main-page">
+            {books}
             </div>
           </div>
         </div>
