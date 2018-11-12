@@ -61,3 +61,8 @@ categories that are arrays:
 	titles (can be blank)
 	playedBy (can be blank)
 	tvSeries
+
+3 routes 
+	characters
+	books
+	houses

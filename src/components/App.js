@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter,
+  Route
+} from 'react-router-dom';
 import '../App.css';
 import Header from './Header';
 import CharacterList from './CharacterList';
-// import Book from './Book';
+import Books from './Book';
 
 
-const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
-// const bookEndpoint = 'https://anapioficeandfire.com/api/books';
-
+const charEndpoint = 'https://www.anapioficeandfire.com/api/characters?page=1';
 
 class App extends Component {
   
@@ -15,11 +17,8 @@ class App extends Component {
     super();
     this.state = {
       profiles: [],
-      currentPage: []
+      book: []
     };
-    // this.state = {
-    //   books: []
-    // };
   }
     componentDidMount(){
       fetch(charEndpoint)
@@ -31,15 +30,14 @@ class App extends Component {
             console.log('Error fetching and parsing data', error)
           });
     }
-
     previousPage =() => {
       if (this.state.currentPage !== 1)
-      this.setState((prevState) => ({currentPage: (prevState.currentPage -1 )}))
+      this.setState((prevState) => ({currentPage: (prevState.charEndpoint -1 )}))
     }
 
     nextPage = () => {
-      if (this.state.currentPage + 1 < this.state.App)
-      this.setState((prevState) => ({currentPage: (prevState.currentPage + 1)}))
+      if (this.state.currentPage + 1 < this.state.profiles)
+      this.setState((prevState) => ({currentPage: (prevState.charEndpoint + 1)}))
     }
 
     // componentDidMount(){
@@ -54,19 +52,23 @@ class App extends Component {
     // }
     render(){
       let profiles = this.state.profiles;
+      // let books = this.state.books;
       console.log(this.state.profiles);
+      console.log(this.state.books);
       return(
+        <BrowserRouter>
         <div className="App">
             <Header />
           <div className="App-intro">
             <div className="main-page">
               <button onClick={this.previousPage}>Previous Page</button>
               <button onClick={this.nextPage}>Next Page</button>
+              {/* <Route path="/Books" Component={Books} /> */}
               <CharacterList list={profiles}/>
-              {/* <Book booklist={books}/> */}
             </div>
           </div>
         </div>
+        </BrowserRouter>
       );
     }
   }
