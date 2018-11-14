@@ -47,7 +47,7 @@ li {
   /******************************************
   ONE COLUMN LAYOUT
   ******************************************/
-/* @media screen and (min-width: 500px) { 
+@media screen and (min-width: 480px) { 
   .main-page {
     columns: 1;
   }
@@ -56,7 +56,7 @@ li {
     display: inline;
     padding: 5px;
   }
-} */
+}
 
   /******************************************
   TWO COLUMN LAYOUT
