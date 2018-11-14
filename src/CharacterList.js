@@ -9,7 +9,5 @@ const CharacterList = props => {
         </ul>
     );
 }
-// return(
-//     <CharacterList list={profiles}/>
-// )
+
 export default CharacterList;
