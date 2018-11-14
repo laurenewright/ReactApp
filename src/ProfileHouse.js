@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HouseList from './HouseList';
 
+//fetch and render house data
 
 const houseEndpoint = 'https://www.anapioficeandfire.com/api/houses';
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Booklist from './BookList';
 
+//fetch and render book data
 
 const bookEndpoint = 'https://anapioficeandfire.com/api/books';
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import Book from './Book';
 
+//map through the book data array
+
 const BookList = props => {
     console.log(this)
     return (

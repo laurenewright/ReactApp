@@ -14,23 +14,12 @@
   background-color: #222;
   height: 150px;
   padding: 25px;
-  text-align: center;
+  padding-bottom: 50px;
 }
 
 .main-nav li {
-  display: inline;
-  float: right;
-  font-size: 1.5em;
-  padding: 10px;
+  /* text-align: center; */
   font-family: 'Cinzel Decorative';
-}
-.App-title {
-  font-size: 1.5em;
-  padding-top: 10%;
-  font-family: 'Cinzel Decorative';
-  position: center;
-  color: white;
-  display: inline;
 }
 
 .App-intro {
@@ -40,7 +29,6 @@
 
 .main-page {
   font-size: 1em;
-  columns: 3;
 }
 
 .profile {
@@ -54,4 +42,48 @@ p {
 
 li {
   list-style-type: none;
+}
+
+  /******************************************
+  ONE COLUMN LAYOUT
+  ******************************************/
+/* @media screen and (min-width: 500px) { 
+  .main-page {
+    columns: 1;
+  }
+  .main-nav li {
+    font-size: 1.5em;
+    display: inline;
+    padding: 5px;
+  }
+} */
+
+  /******************************************
+  TWO COLUMN LAYOUT
+  ******************************************/
+@media screen and (min-width: 660px) {
+  .main-page {
+    columns: 2;
+  }
+  .main-nav li {
+    font-size: 1.5em;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+}
+  /******************************************
+  Three COLUMN LAYOUT
+  ******************************************/
+
+@media screen and (min-width: 860px) {
+  .main-page {
+    columns: 3;
+  }
+  .main-nav li {
+    font-size: 1.5em;
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
 }

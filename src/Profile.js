@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CharacterList from './CharacterList';
 
+//fetch and render character data
+
 
 const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
 

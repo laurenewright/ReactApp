@@ -1,5 +1,7 @@
 import React from 'react';
 
+//format the book data
+
 const House = props => (
   <li className="profile">
     <p>
