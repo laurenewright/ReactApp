@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './Logo_Game_of_Thrones.png';
 import './App.css';
-import Profile from './Profile';
+import profileCharacter from './ProfileCharacter';
 import profileHouse from './ProfileHouse';
 import profileBook from './ProfileBook';
 import { NavLink } from 'react-router-dom';
@@ -22,14 +22,14 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
             <ul className="main-nav">
               <li><NavLink exact to="/">Home</NavLink></li>
-              <li><NavLink to="/Profile">Characters</NavLink></li>
+              <li><NavLink to="/ProfileCharacter">Characters</NavLink></li>
               <li><NavLink to="/ProfileHouse">Houses</NavLink></li>
               <li><NavLink to="/ProfileBook">Books</NavLink></li>
             </ul>
         </header>
               <Switch className = "main-page">
                 {/* <Route exact path="/" component={Home} /> */}
-                <Route path="/Profile" component={Profile}/>
+                <Route path="/ProfileCharacter" component={profileCharacter}/>
                 <Route path="/ProfileBook" component={profileBook} />
                 <Route path="/ProfileHouse" component={profileHouse} />
             </Switch>

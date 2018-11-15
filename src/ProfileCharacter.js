@@ -7,7 +7,7 @@ import CharacterList from './CharacterList';
 const charEndpoint = 'https://www.anapioficeandfire.com/api/characters';
 
 
-class Profile extends Component {
+class profileCharacter extends Component {
   
   constructor(){
     super();
@@ -41,4 +41,4 @@ class Profile extends Component {
     }
   }
 
-export default Profile;
+export default profileCharacter;
