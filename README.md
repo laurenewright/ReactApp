@@ -2,17 +2,18 @@ React Project Purpose
 To show what I have learned about JavaScript/React. This project will be a directory of Game of Thrones characters using a public Game of Thrones API.
 
 To get started
-  Clone the project to your computer
-  Open a command line app (preferably Git Bash)
-  Navigate to the project folder
-  Run the line "npm install"
-  Run the line "npm start"
+  1. Clone the project to your computer
+  2. Open a command line app (preferably Git Bash)
+  3. Navigate to the project folder
+  4. Run the line "npm install"
+  5. Run the line "npm start"
+  
 This will open up a window in your default browser to localhost:3000
  
 This Project Uses
-  JavaScript (JSX)
-  React
-  CSS
+  1. JavaScript (JSX)
+  2. React
+  3. CSS
 
 Author
   laurenwright
