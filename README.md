@@ -1,28 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 React Project Purpose
-
 To show what I have learned about JavaScript/React. This project will be a directory of Game of Thrones characters using a public Game of Thrones API.
 
-To get started:
-1. Clone the project to your computer
-2. Open a command line app (preferably Git Bash)
-3. Navigate to the project folder
-4. Run the line "npm install"
-5.Run the line "npm start"
-6. This will open up a window in your default browser to localhost:3000
-
-This Project Uses:
-JavaScript (JSX)
-React
-CSS
+To get started
+  Clone the project to your computer
+  Open a command line app (preferably Git Bash)
+  Navigate to the project folder
+  Run the line "npm install"
+  Run the line "npm start"
+This will open up a window in your default browser to localhost:3000
+ 
+This Project Uses
+  JavaScript (JSX)
+  React
+  CSS
 
 Author
-laurenwright
-
-Code Louisville Project Requirments 
-
-Requirements:
+  laurenwright
+  
+ Code Louisville Project Requirments 
+ Requirements:
 1. Your project is responsive to different devices and/or browser sizes or screen resolutions.
 2. Your project is a React application implementing the React framework
 3. You must create at least 3 navigable routes within your app using React Router
