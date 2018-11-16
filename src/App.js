@@ -21,14 +21,12 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
             <ul className="main-nav">
-              <li><NavLink exact to="/">Home</NavLink></li>
               <li><NavLink to="/ProfileCharacter">Characters</NavLink></li>
               <li><NavLink to="/ProfileHouse">Houses</NavLink></li>
               <li><NavLink to="/ProfileBook">Books</NavLink></li>
             </ul>
         </header>
               <Switch className = "main-page">
-                {/* <Route exact path="/" component={Home} /> */}
                 <Route path="/ProfileCharacter" component={profileCharacter}/>
                 <Route path="/ProfileBook" component={profileBook} />
                 <Route path="/ProfileHouse" component={profileHouse} />
